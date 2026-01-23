@@ -24,21 +24,7 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <script src="https://assets.adobedtm.com/4fa03d1212c6/8fc03dcd0166/launch-0ccc1e7ff8b8-development.min.js"></script>
-    <script>
-        adobe.target.getOffers({
-  request: {
-    execute: {
-      mboxes: [
-        { name: "hero-banner" },
-        { name: "product-tile" },
-        { name: "cta-strip" },
-        { name: "recommendation-slot" },
-        { name: "footer-promo" }
-      ]
-    }
-  }
-});
-    </script>
+   
 </head>
 
 <body>
@@ -643,6 +629,21 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+     <script>
+        adobe.target.getOffers({
+  request: {
+    execute: {
+      mboxes: [
+        { name: "hero-banner" },
+        { name: "product-tile" },
+        { name: "cta-strip" },
+        { name: "recommendation-slot" },
+        { name: "footer-promo" }
+      ]
+    }
+  }
+});
+    </script>
 </body>
 
 </html>
