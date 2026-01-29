@@ -634,7 +634,9 @@
         adobe.target.getOffers({
     "request": {
       "execute": {
-        "pageLoad": {}
+        "mboxes": [
+    { "name": "homepage-hero", "index": 0 }
+  ]
       }
     }
   }).then(function (response) {
