@@ -634,7 +634,8 @@
         adobe.target.getOffers({
     request: {
       execute: {
-        mboxes: [{ name: "target-global-mbox" }]
+        mboxes: [{ name: "target-global-mbox",
+                 index: 0}]
       }
     }
   }).then(function (response) {
