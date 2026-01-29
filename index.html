@@ -632,10 +632,10 @@
      <script>
          console.error('cje')
         adobe.target.getOffers({
-    request: {
-      execute: {
-        mboxes: [{ name: "target-global-mbox",
-                 index: 0}]
+    "request": {
+      "execute": {
+        "mboxes": [{ "name": "target-global-mbox",
+                 "index": 0}]
       }
     }
   }).then(function (response) {
@@ -647,7 +647,9 @@
 
       console.log(data)
     }
-  });
+  }).catch(function (error) {
+  console.error("Target getOffers error:", error);
+});
     </script>
 </body>
 
