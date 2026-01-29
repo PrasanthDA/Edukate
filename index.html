@@ -631,18 +631,21 @@
     <script src="js/main.js"></script>
      <script>
         adobe.target.getOffers({
-  request: {
-    execute: {
-      mboxes: [
-        { name: "hero-banner" },
-        { name: "product-tile" },
-        { name: "cta-strip" },
-        { name: "recommendation-slot" },
-        { name: "footer-promo" }
-      ]
+    request: {
+      execute: {
+        mboxes: [{ name: "target-global-mbox" }]
+      }
     }
-  }
-});
+  }).then(function (response) {
+    const mbox = response.execute.mboxes[0];
+    const offer = mbox.offers[0];
+
+    if (offer.type === "json") {
+      const data = offer.content;
+
+      console.log(data)
+    }
+  });
     </script>
 </body>
 
