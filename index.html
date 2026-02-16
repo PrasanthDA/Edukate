@@ -629,29 +629,6 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-     <script>
-         console.error('cje')
-        adobe.target.getOffers({
-    "request": {
-      "execute": {
-        "mboxes": [
-    { "name": "homepage-hero", "index": 0 }
-  ]
-      }
-    }
-  }).then(function (response) {
-    const mbox = response.execute.mboxes[0];
-    const offer = mbox.offers[0];
-
-    if (offer.type === "json") {
-      const data = offer.content;
-
-      console.log(data)
-    }
-  }).catch(function (error) {
-  console.error("Target getOffers error:", error);
-});
-    </script>
 </body>
 
 </html>
